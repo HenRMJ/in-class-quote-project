@@ -1,6 +1,7 @@
-const quoteArray = ["test", "test1", "test2", "test3", "test4", "test5", "test6", "test7"];
-const quote = document.getElementById("quote");
 const url = "https://api.adviceslip.com/advice";
+
+const quote = document.getElementById("quote");
+const button = document.querySelector("button");
 
 const getQuote = async () => {
     try {
@@ -14,7 +15,4 @@ const getQuote = async () => {
     }
 }
 
-const button = document.querySelector("button");
-
 button.addEventListener("click", getQuote);
-
